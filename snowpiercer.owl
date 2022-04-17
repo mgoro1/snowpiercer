@@ -1,0 +1,690 @@
+Prefix(:=<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
+Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
+Prefix(TV_series:=<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#>)
+
+
+Ontology(<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)>
+<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)/1.0.0>
+Annotation(rdfs:comment "Author: Marco Antonio Gómez Romo")
+Annotation(rdfs:label "Name: Snowpiercer Ontology")
+
+Declaration(Class(TV_series:Big_Alice))
+Declaration(Class(TV_series:Character))
+Declaration(Class(TV_series:Character_Information))
+Declaration(Class(TV_series:Classes))
+Declaration(Class(TV_series:Director))
+Declaration(Class(TV_series:Episode))
+Declaration(Class(TV_series:Gender))
+Declaration(Class(TV_series:Location))
+Declaration(Class(TV_series:Occupation))
+Declaration(Class(TV_series:Portrayal))
+Declaration(Class(TV_series:Relationships))
+Declaration(Class(TV_series:Season))
+Declaration(Class(TV_series:Snowpiercer))
+Declaration(Class(TV_series:Social_Status))
+Declaration(Class(TV_series:Status))
+Declaration(Class(TV_series:Tailie))
+Declaration(Class(TV_series:Train))
+Declaration(Class(<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#1st_Class>))
+Declaration(Class(<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#2nd_Class>))
+Declaration(Class(<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#3rd_Class>))
+Declaration(ObjectProperty(TV_series:episodeOf))
+Declaration(ObjectProperty(TV_series:firstAppearance))
+Declaration(ObjectProperty(TV_series:gender))
+Declaration(ObjectProperty(TV_series:hasOccupation))
+Declaration(ObjectProperty(TV_series:hasRomance))
+Declaration(ObjectProperty(TV_series:hasSocialStatus))
+Declaration(ObjectProperty(TV_series:haschildren))
+Declaration(ObjectProperty(TV_series:isChild))
+Declaration(ObjectProperty(TV_series:isEnemy))
+Declaration(ObjectProperty(TV_series:isFriend))
+Declaration(ObjectProperty(TV_series:status))
+Declaration(DataProperty(TV_series:Height))
+Declaration(DataProperty(TV_series:Lenght))
+Declaration(DataProperty(TV_series:Width))
+Declaration(DataProperty(TV_series:car_number))
+Declaration(DataProperty(TV_series:duration))
+Declaration(DataProperty(TV_series:filmography))
+Declaration(DataProperty(TV_series:hasHeight))
+Declaration(DataProperty(TV_series:nationality))
+Declaration(DataProperty(TV_series:no_episodes))
+Declaration(DataProperty(TV_series:portrayer))
+Declaration(DataProperty(TV_series:release_date))
+Declaration(NamedIndividual(TV_series:A_New_Life))
+Declaration(NamedIndividual(TV_series:Access_Is_Power))
+Declaration(NamedIndividual(TV_series:Alexandra_Cavill))
+Declaration(NamedIndividual(TV_series:Alive))
+Declaration(NamedIndividual(TV_series:Andre_Layton))
+Declaration(NamedIndividual(TV_series:Bennett_Knox))
+Declaration(NamedIndividual(TV_series:Bess_Till))
+Declaration(NamedIndividual(TV_series:Chef_of_Aquarium_Car))
+Declaration(NamedIndividual(TV_series:Dead))
+Declaration(NamedIndividual(TV_series:Engineer))
+Declaration(NamedIndividual(TV_series:Female))
+Declaration(NamedIndividual(TV_series:First_the_Weather_Changed))
+Declaration(NamedIndividual(TV_series:Graeme_Manson))
+Declaration(NamedIndividual(TV_series:Head_Engineer))
+Declaration(NamedIndividual(TV_series:Head_of_Hospitality))
+Declaration(NamedIndividual(TV_series:Janitor))
+Declaration(NamedIndividual(TV_series:Javier_De_La_Torre))
+Declaration(NamedIndividual(TV_series:Jinju_Seong))
+Declaration(NamedIndividual(TV_series:Josie_Wellstead))
+Declaration(NamedIndividual(TV_series:LJ_Folger))
+Declaration(NamedIndividual(TV_series:Leader))
+Declaration(NamedIndividual(TV_series:Liana_Layton))
+Declaration(NamedIndividual(TV_series:LowerLower_Class))
+Declaration(NamedIndividual(TV_series:Lower_Class))
+Declaration(NamedIndividual(TV_series:Male))
+Declaration(NamedIndividual(TV_series:Melanie_Cavill))
+Declaration(NamedIndividual(TV_series:Middle_class))
+Declaration(NamedIndividual(TV_series:Miles))
+Declaration(NamedIndividual(TV_series:Miss_Audrey))
+Declaration(NamedIndividual(TV_series:Mr._Wilford))
+Declaration(NamedIndividual(TV_series:Night_Car))
+Declaration(NamedIndividual(TV_series:Pike))
+Declaration(NamedIndividual(TV_series:Prepare_to_Brace))
+Declaration(NamedIndividual(TV_series:Ruth))
+Declaration(NamedIndividual(TV_series:Season_1))
+Declaration(NamedIndividual(TV_series:Season_2))
+Declaration(NamedIndividual(TV_series:Season_3))
+Declaration(NamedIndividual(TV_series:Student))
+Declaration(NamedIndividual(TV_series:The_Aquarium))
+Declaration(NamedIndividual(TV_series:The_Tail))
+Declaration(NamedIndividual(TV_series:The_Time_of_Two_Engines))
+Declaration(NamedIndividual(TV_series:Train_Detective))
+Declaration(NamedIndividual(TV_series:Upper_Class))
+Declaration(NamedIndividual(TV_series:Veterinarian))
+Declaration(NamedIndividual(TV_series:Whitout_Their_Maker))
+Declaration(NamedIndividual(<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#994_Cars_Long>))
+Declaration(AnnotationProperty(rdfs:sameAs))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: TV_series:episodeOf (TV_series:episodeOf)
+
+AnnotationAssertion(rdfs:comment TV_series:episodeOf "An episode is a single season."@en)
+ObjectPropertyDomain(TV_series:episodeOf TV_series:Episode)
+ObjectPropertyRange(TV_series:episodeOf TV_series:Season)
+
+# Object Property: TV_series:firstAppearance (TV_series:firstAppearance)
+
+AnnotationAssertion(rdfs:comment TV_series:firstAppearance "First appearance in the serie of the character."@en)
+ObjectPropertyDomain(TV_series:firstAppearance TV_series:Character_Information)
+ObjectPropertyRange(TV_series:firstAppearance TV_series:Episode)
+
+# Object Property: TV_series:gender (TV_series:gender)
+
+AnnotationAssertion(rdfs:comment TV_series:gender "Gender (male/female)"@en)
+ObjectPropertyDomain(TV_series:gender TV_series:Character_Information)
+ObjectPropertyRange(TV_series:gender TV_series:Gender)
+
+# Object Property: TV_series:hasOccupation (TV_series:hasOccupation)
+
+AnnotationAssertion(rdfs:comment TV_series:hasOccupation "Occupation of the a character."@en)
+ObjectPropertyDomain(TV_series:hasOccupation TV_series:Character_Information)
+ObjectPropertyRange(TV_series:hasOccupation TV_series:Occupation)
+
+# Object Property: TV_series:hasRomance (TV_series:hasRomance)
+
+AnnotationAssertion(rdfs:comment TV_series:hasRomance "A character has a romance."@en)
+ObjectPropertyDomain(TV_series:hasRomance TV_series:Relationships)
+ObjectPropertyRange(TV_series:hasRomance TV_series:Character)
+
+# Object Property: TV_series:hasSocialStatus (TV_series:hasSocialStatus)
+
+AnnotationAssertion(rdfs:comment TV_series:hasSocialStatus "Social status"@en)
+FunctionalObjectProperty(TV_series:hasSocialStatus)
+ObjectPropertyDomain(TV_series:hasSocialStatus TV_series:Character_Information)
+ObjectPropertyRange(TV_series:hasSocialStatus TV_series:Social_Status)
+
+# Object Property: TV_series:haschildren (TV_series:haschildren)
+
+AnnotationAssertion(rdfs:comment TV_series:haschildren "A character has a child"@en)
+ObjectPropertyDomain(TV_series:haschildren TV_series:Relationships)
+ObjectPropertyRange(TV_series:haschildren TV_series:Character)
+
+# Object Property: TV_series:isChild (TV_series:isChild)
+
+AnnotationAssertion(rdfs:comment TV_series:isChild "A character has a parent."@en)
+ObjectPropertyDomain(TV_series:isChild TV_series:Relationships)
+ObjectPropertyRange(TV_series:isChild TV_series:Character)
+
+# Object Property: TV_series:isEnemy (TV_series:isEnemy)
+
+AnnotationAssertion(rdfs:comment TV_series:isEnemy "A character is enemy  the other."@en)
+ObjectPropertyDomain(TV_series:isEnemy TV_series:Relationships)
+ObjectPropertyRange(TV_series:isEnemy TV_series:Character)
+
+# Object Property: TV_series:isFriend (TV_series:isFriend)
+
+AnnotationAssertion(rdfs:comment TV_series:isFriend "A character is friend the other."@en)
+ObjectPropertyDomain(TV_series:isFriend TV_series:Relationships)
+ObjectPropertyRange(TV_series:isFriend TV_series:Character)
+
+# Object Property: TV_series:status (TV_series:status)
+
+AnnotationAssertion(rdfs:comment TV_series:status "Status (alive/dead)"@en)
+ObjectPropertyDomain(TV_series:status TV_series:Character_Information)
+ObjectPropertyRange(TV_series:status TV_series:Status)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: TV_series:Height (TV_series:Height)
+
+AnnotationAssertion(rdfs:comment TV_series:Height "Height of the car"@en)
+DataPropertyDomain(TV_series:Height TV_series:Location)
+DataPropertyRange(TV_series:Height xsd:int)
+
+# Data Property: TV_series:Lenght (TV_series:Lenght)
+
+AnnotationAssertion(rdfs:comment TV_series:Lenght "Lenght of the car"@en)
+DataPropertyDomain(TV_series:Lenght TV_series:Location)
+DataPropertyRange(TV_series:Lenght xsd:int)
+
+# Data Property: TV_series:Width (TV_series:Width)
+
+AnnotationAssertion(rdfs:comment TV_series:Width "Width of the car"@en)
+DataPropertyDomain(TV_series:Width TV_series:Location)
+DataPropertyRange(TV_series:Width xsd:int)
+
+# Data Property: TV_series:car_number (TV_series:car_number)
+
+AnnotationAssertion(rdfs:comment TV_series:car_number "Number of the car."@en)
+DataPropertyDomain(TV_series:car_number TV_series:Location)
+DataPropertyRange(TV_series:car_number xsd:int)
+
+# Data Property: TV_series:duration (TV_series:duration)
+
+AnnotationAssertion(rdfs:comment TV_series:duration "Duration of the one episode."@en)
+DataPropertyDomain(TV_series:duration TV_series:Episode)
+DataPropertyRange(TV_series:duration xsd:string)
+
+# Data Property: TV_series:filmography (TV_series:filmography)
+
+AnnotationAssertion(rdfs:comment TV_series:filmography "Other films or series developed by director."@en)
+DataPropertyDomain(TV_series:filmography TV_series:Director)
+DataPropertyRange(TV_series:filmography xsd:string)
+
+# Data Property: TV_series:hasHeight (TV_series:hasHeight)
+
+DataPropertyDomain(TV_series:hasHeight TV_series:Character_Information)
+DataPropertyRange(TV_series:hasHeight xsd:int)
+
+# Data Property: TV_series:nationality (TV_series:nationality)
+
+AnnotationAssertion(rdfs:comment TV_series:nationality "Nationality of the director."@en)
+DataPropertyDomain(TV_series:nationality TV_series:Director)
+DataPropertyRange(TV_series:nationality xsd:string)
+
+# Data Property: TV_series:no_episodes (TV_series:no_episodes)
+
+AnnotationAssertion(rdfs:comment TV_series:no_episodes "Number episodes of the a season."@en)
+DataPropertyDomain(TV_series:no_episodes TV_series:Season)
+DataPropertyRange(TV_series:no_episodes xsd:int)
+
+# Data Property: TV_series:portrayer (TV_series:portrayer)
+
+AnnotationAssertion(rdfs:comment TV_series:portrayer "Portrayer of the a character."@en)
+DataPropertyDomain(TV_series:portrayer TV_series:Portrayal)
+DataPropertyRange(TV_series:portrayer xsd:string)
+
+# Data Property: TV_series:release_date (TV_series:release_date)
+
+AnnotationAssertion(rdfs:comment TV_series:release_date "Release date of the a season."@en)
+DataPropertyDomain(TV_series:release_date TV_series:Season)
+DataPropertyRange(TV_series:release_date xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: TV_series:Big_Alice (TV_series:Big_Alice)
+
+AnnotationAssertion(rdfs:comment TV_series:Big_Alice "Secondary train"@en)
+SubClassOf(TV_series:Big_Alice TV_series:Train)
+
+# Class: TV_series:Character (TV_series:Character)
+
+AnnotationAssertion(rdfs:comment TV_series:Character "Information about character"@en)
+
+# Class: TV_series:Character_Information (TV_series:Character_Information)
+
+AnnotationAssertion(rdfs:comment TV_series:Character_Information "General information related to the character"@en)
+SubClassOf(TV_series:Character_Information TV_series:Character)
+
+# Class: TV_series:Classes (TV_series:Classes)
+
+AnnotationAssertion(rdfs:comment TV_series:Classes "Type of class in to the train"@en)
+
+# Class: TV_series:Director (TV_series:Director)
+
+AnnotationAssertion(rdfs:comment TV_series:Director "Series director (actually)"@en)
+
+# Class: TV_series:Episode (TV_series:Episode)
+
+AnnotationAssertion(rdfs:comment TV_series:Episode "Episodes of the series"@en)
+
+# Class: TV_series:Gender (TV_series:Gender)
+
+AnnotationAssertion(rdfs:comment TV_series:Gender "Class Gender (male/female)"@en)
+AnnotationAssertion(rdfs:sameAs TV_series:Gender "https://es.dbpedia.org/page/Gender")
+SubClassOf(TV_series:Gender TV_series:Character_Information)
+
+# Class: TV_series:Location (TV_series:Location)
+
+AnnotationAssertion(rdfs:comment TV_series:Location "Relevant cars of the trains"@en)
+
+# Class: TV_series:Occupation (TV_series:Occupation)
+
+AnnotationAssertion(rdfs:comment TV_series:Occupation "Occupation in to the train"@en)
+SubClassOf(TV_series:Occupation TV_series:Character_Information)
+
+# Class: TV_series:Portrayal (TV_series:Portrayal)
+
+AnnotationAssertion(rdfs:comment TV_series:Portrayal "Character interpreter"@en)
+SubClassOf(TV_series:Portrayal TV_series:Character)
+
+# Class: TV_series:Relationships (TV_series:Relationships)
+
+AnnotationAssertion(rdfs:comment TV_series:Relationships "Class relationships (romance, friends, enemies)"@en)
+SubClassOf(TV_series:Relationships TV_series:Character)
+
+# Class: TV_series:Season (TV_series:Season)
+
+AnnotationAssertion(rdfs:comment TV_series:Season "Seasons of the series"@en)
+AnnotationAssertion(rdfs:sameAs TV_series:Season "https://es.dbpedia.org/page/Snowpiercer_(serie_de_televisi%C3%B3n)")
+
+# Class: TV_series:Snowpiercer (TV_series:Snowpiercer)
+
+AnnotationAssertion(rdfs:comment TV_series:Snowpiercer "Main train"@en)
+SubClassOf(TV_series:Snowpiercer TV_series:Train)
+
+# Class: TV_series:Social_Status (TV_series:Social_Status)
+
+AnnotationAssertion(rdfs:comment TV_series:Social_Status "Class social status"@en)
+SubClassOf(TV_series:Social_Status TV_series:Character_Information)
+
+# Class: TV_series:Status (TV_series:Status)
+
+AnnotationAssertion(rdfs:comment TV_series:Status "Class status (alive/dead)"@en)
+SubClassOf(TV_series:Status TV_series:Character_Information)
+
+# Class: TV_series:Tailie (TV_series:Tailie)
+
+AnnotationAssertion(rdfs:comment TV_series:Tailie "Lower class withoy occupation"@en)
+SubClassOf(TV_series:Tailie TV_series:Classes)
+DisjointClasses(TV_series:Tailie <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#1st_Class>)
+DisjointClasses(TV_series:Tailie <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#2nd_Class>)
+DisjointClasses(TV_series:Tailie <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#3rd_Class>)
+
+# Class: TV_series:Train (TV_series:Train)
+
+AnnotationAssertion(rdfs:comment TV_series:Train "Trains seen in the series"@en)
+
+# Class: <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#1st_Class> (<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#1st_Class>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#1st_Class> "Upper class"@en)
+SubClassOf(<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#1st_Class> TV_series:Classes)
+DisjointClasses(<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#1st_Class> <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#2nd_Class>)
+DisjointClasses(<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#1st_Class> <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#3rd_Class>)
+
+# Class: <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#2nd_Class> (<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#2nd_Class>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#2nd_Class> "Middle class"@en)
+SubClassOf(<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#2nd_Class> TV_series:Classes)
+DisjointClasses(<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#2nd_Class> <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#3rd_Class>)
+
+# Class: <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#3rd_Class> (<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#3rd_Class>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#3rd_Class> "Lower class"@en)
+SubClassOf(<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#3rd_Class> TV_series:Classes)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: TV_series:A_New_Life (TV_series:A_New_Life)
+
+ClassAssertion(TV_series:Episode TV_series:A_New_Life)
+ObjectPropertyAssertion(TV_series:episodeOf TV_series:A_New_Life TV_series:Season_3)
+DataPropertyAssertion(TV_series:duration TV_series:A_New_Life "43 min."^^xsd:string)
+
+# Individual: TV_series:Access_Is_Power (TV_series:Access_Is_Power)
+
+ClassAssertion(TV_series:Episode TV_series:Access_Is_Power)
+ObjectPropertyAssertion(TV_series:episodeOf TV_series:Access_Is_Power TV_series:Season_1)
+DataPropertyAssertion(TV_series:release_date TV_series:Access_Is_Power "44 min."^^xsd:string)
+
+# Individual: TV_series:Alexandra_Cavill (TV_series:Alexandra_Cavill)
+
+ClassAssertion(TV_series:Character TV_series:Alexandra_Cavill)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Alexandra_Cavill <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#994_Cars_Long>)
+ObjectPropertyAssertion(TV_series:gender TV_series:Alexandra_Cavill TV_series:Female)
+ObjectPropertyAssertion(TV_series:hasOccupation TV_series:Alexandra_Cavill TV_series:Engineer)
+ObjectPropertyAssertion(TV_series:isChild TV_series:Alexandra_Cavill TV_series:Melanie_Cavill)
+ObjectPropertyAssertion(TV_series:isEnemy TV_series:Alexandra_Cavill TV_series:LJ_Folger)
+ObjectPropertyAssertion(TV_series:isEnemy TV_series:Alexandra_Cavill TV_series:Miss_Audrey)
+ObjectPropertyAssertion(TV_series:isEnemy TV_series:Alexandra_Cavill TV_series:Mr._Wilford)
+ObjectPropertyAssertion(TV_series:isFriend TV_series:Alexandra_Cavill TV_series:Andre_Layton)
+ObjectPropertyAssertion(TV_series:isFriend TV_series:Alexandra_Cavill TV_series:Bennett_Knox)
+ObjectPropertyAssertion(TV_series:isFriend TV_series:Alexandra_Cavill TV_series:Bess_Till)
+ObjectPropertyAssertion(TV_series:isFriend TV_series:Alexandra_Cavill TV_series:Josie_Wellstead)
+ObjectPropertyAssertion(TV_series:status TV_series:Alexandra_Cavill TV_series:Alive)
+DataPropertyAssertion(TV_series:hasHeight TV_series:Alexandra_Cavill "164"^^xsd:int)
+DataPropertyAssertion(TV_series:portrayer TV_series:Alexandra_Cavill "Rowan Blanchard"^^xsd:string)
+
+# Individual: TV_series:Alive (TV_series:Alive)
+
+ClassAssertion(TV_series:Status TV_series:Alive)
+
+# Individual: TV_series:Andre_Layton (TV_series:Andre_Layton)
+
+ClassAssertion(TV_series:Character TV_series:Andre_Layton)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Andre_Layton TV_series:First_the_Weather_Changed)
+ObjectPropertyAssertion(TV_series:gender TV_series:Andre_Layton TV_series:Male)
+ObjectPropertyAssertion(TV_series:hasOccupation TV_series:Andre_Layton TV_series:Leader)
+ObjectPropertyAssertion(TV_series:hasRomance TV_series:Andre_Layton TV_series:Josie_Wellstead)
+ObjectPropertyAssertion(TV_series:hasSocialStatus TV_series:Andre_Layton TV_series:LowerLower_Class)
+ObjectPropertyAssertion(TV_series:haschildren TV_series:Andre_Layton TV_series:Liana_Layton)
+ObjectPropertyAssertion(TV_series:haschildren TV_series:Andre_Layton TV_series:Miles)
+ObjectPropertyAssertion(TV_series:isEnemy TV_series:Andre_Layton TV_series:LJ_Folger)
+ObjectPropertyAssertion(TV_series:isEnemy TV_series:Andre_Layton TV_series:Mr._Wilford)
+ObjectPropertyAssertion(TV_series:isEnemy TV_series:Andre_Layton TV_series:Pike)
+ObjectPropertyAssertion(TV_series:isFriend TV_series:Andre_Layton TV_series:Alexandra_Cavill)
+ObjectPropertyAssertion(TV_series:isFriend TV_series:Andre_Layton TV_series:Javier_De_La_Torre)
+ObjectPropertyAssertion(TV_series:isFriend TV_series:Andre_Layton TV_series:Melanie_Cavill)
+ObjectPropertyAssertion(TV_series:isFriend TV_series:Andre_Layton TV_series:Ruth)
+ObjectPropertyAssertion(TV_series:status TV_series:Andre_Layton TV_series:Alive)
+DataPropertyAssertion(TV_series:hasHeight TV_series:Andre_Layton "183"^^xsd:int)
+DataPropertyAssertion(TV_series:portrayer TV_series:Andre_Layton "Daveed Diggs"^^xsd:string)
+
+# Individual: TV_series:Bennett_Knox (TV_series:Bennett_Knox)
+
+ClassAssertion(TV_series:Character TV_series:Bennett_Knox)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Bennett_Knox TV_series:First_the_Weather_Changed)
+ObjectPropertyAssertion(TV_series:gender TV_series:Bennett_Knox TV_series:Male)
+ObjectPropertyAssertion(TV_series:hasOccupation TV_series:Bennett_Knox TV_series:Engineer)
+ObjectPropertyAssertion(TV_series:hasSocialStatus TV_series:Bennett_Knox TV_series:Middle_class)
+ObjectPropertyAssertion(TV_series:status TV_series:Bennett_Knox TV_series:Alive)
+DataPropertyAssertion(TV_series:portrayer TV_series:Bennett_Knox "Iddo Goldberg"^^xsd:string)
+
+# Individual: TV_series:Bess_Till (TV_series:Bess_Till)
+
+ClassAssertion(TV_series:Character TV_series:Bess_Till)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Bess_Till TV_series:First_the_Weather_Changed)
+ObjectPropertyAssertion(TV_series:gender TV_series:Bess_Till TV_series:Female)
+ObjectPropertyAssertion(TV_series:hasOccupation TV_series:Bess_Till TV_series:Train_Detective)
+ObjectPropertyAssertion(TV_series:hasSocialStatus TV_series:Bess_Till TV_series:Middle_class)
+ObjectPropertyAssertion(TV_series:isFriend TV_series:Bess_Till TV_series:Andre_Layton)
+ObjectPropertyAssertion(TV_series:status TV_series:Bess_Till TV_series:Alive)
+DataPropertyAssertion(TV_series:hasHeight TV_series:Bess_Till "173"^^xsd:int)
+DataPropertyAssertion(TV_series:portrayer TV_series:Bess_Till "Mickey Sumner"^^xsd:string)
+
+# Individual: TV_series:Chef_of_Aquarium_Car (TV_series:Chef_of_Aquarium_Car)
+
+ClassAssertion(TV_series:Occupation TV_series:Chef_of_Aquarium_Car)
+
+# Individual: TV_series:Dead (TV_series:Dead)
+
+ClassAssertion(TV_series:Status TV_series:Dead)
+
+# Individual: TV_series:Engineer (TV_series:Engineer)
+
+ClassAssertion(TV_series:Occupation TV_series:Engineer)
+
+# Individual: TV_series:Female (TV_series:Female)
+
+ClassAssertion(TV_series:Gender TV_series:Female)
+
+# Individual: TV_series:First_the_Weather_Changed (TV_series:First_the_Weather_Changed)
+
+ClassAssertion(TV_series:Episode TV_series:First_the_Weather_Changed)
+ObjectPropertyAssertion(TV_series:episodeOf TV_series:First_the_Weather_Changed TV_series:Season_1)
+DataPropertyAssertion(TV_series:release_date TV_series:First_the_Weather_Changed "51 min."^^xsd:string)
+
+# Individual: TV_series:Graeme_Manson (TV_series:Graeme_Manson)
+
+AnnotationAssertion(rdfs:sameAs TV_series:Graeme_Manson "https://dbpedia.org/page/Graeme_Manson")
+ClassAssertion(TV_series:Director TV_series:Graeme_Manson)
+DataPropertyAssertion(TV_series:filmography TV_series:Graeme_Manson "Film  Lucky Girl (2001)
+Serie Orphan Black (2020)"^^xsd:string)
+DataPropertyAssertion(TV_series:nationality TV_series:Graeme_Manson "Canadian"^^xsd:string)
+
+# Individual: TV_series:Head_Engineer (TV_series:Head_Engineer)
+
+ClassAssertion(TV_series:Occupation TV_series:Head_Engineer)
+
+# Individual: TV_series:Head_of_Hospitality (TV_series:Head_of_Hospitality)
+
+ClassAssertion(TV_series:Occupation TV_series:Head_of_Hospitality)
+
+# Individual: TV_series:Janitor (TV_series:Janitor)
+
+ClassAssertion(TV_series:Occupation TV_series:Janitor)
+
+# Individual: TV_series:Javier_De_La_Torre (TV_series:Javier_De_La_Torre)
+
+ClassAssertion(TV_series:Character TV_series:Javier_De_La_Torre)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Javier_De_La_Torre TV_series:Prepare_to_Brace)
+ObjectPropertyAssertion(TV_series:gender TV_series:Javier_De_La_Torre TV_series:Male)
+ObjectPropertyAssertion(TV_series:hasOccupation TV_series:Javier_De_La_Torre TV_series:Engineer)
+ObjectPropertyAssertion(TV_series:hasSocialStatus TV_series:Javier_De_La_Torre TV_series:Middle_class)
+ObjectPropertyAssertion(TV_series:status TV_series:Javier_De_La_Torre TV_series:Alive)
+DataPropertyAssertion(TV_series:hasHeight TV_series:Javier_De_La_Torre "156"^^xsd:int)
+DataPropertyAssertion(TV_series:portrayer TV_series:Javier_De_La_Torre "Roberto Urbina"^^xsd:string)
+
+# Individual: TV_series:Jinju_Seong (TV_series:Jinju_Seong)
+
+ClassAssertion(TV_series:Character TV_series:Jinju_Seong)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Jinju_Seong TV_series:First_the_Weather_Changed)
+ObjectPropertyAssertion(TV_series:gender TV_series:Jinju_Seong TV_series:Female)
+ObjectPropertyAssertion(TV_series:hasOccupation TV_series:Jinju_Seong TV_series:Chef_of_Aquarium_Car)
+ObjectPropertyAssertion(TV_series:hasSocialStatus TV_series:Jinju_Seong TV_series:Middle_class)
+ObjectPropertyAssertion(TV_series:status TV_series:Jinju_Seong TV_series:Dead)
+DataPropertyAssertion(TV_series:portrayer TV_series:Jinju_Seong "Susan Park"^^xsd:string)
+
+# Individual: TV_series:Josie_Wellstead (TV_series:Josie_Wellstead)
+
+ClassAssertion(TV_series:Character TV_series:Josie_Wellstead)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Josie_Wellstead TV_series:First_the_Weather_Changed)
+ObjectPropertyAssertion(TV_series:gender TV_series:Josie_Wellstead TV_series:Female)
+ObjectPropertyAssertion(TV_series:hasOccupation TV_series:Josie_Wellstead TV_series:Veterinarian)
+ObjectPropertyAssertion(TV_series:hasSocialStatus TV_series:Josie_Wellstead TV_series:LowerLower_Class)
+ObjectPropertyAssertion(TV_series:status TV_series:Josie_Wellstead TV_series:Alive)
+DataPropertyAssertion(TV_series:hasHeight TV_series:Josie_Wellstead "161"^^xsd:int)
+DataPropertyAssertion(TV_series:portrayer TV_series:Josie_Wellstead "Katie McGuinness"^^xsd:string)
+
+# Individual: TV_series:LJ_Folger (TV_series:LJ_Folger)
+
+ClassAssertion(TV_series:Character TV_series:LJ_Folger)
+ObjectPropertyAssertion(TV_series:gender TV_series:LJ_Folger TV_series:Female)
+ObjectPropertyAssertion(TV_series:hasOccupation TV_series:LJ_Folger TV_series:Janitor)
+ObjectPropertyAssertion(TV_series:hasSocialStatus TV_series:LJ_Folger TV_series:Upper_Class)
+ObjectPropertyAssertion(TV_series:isEnemy TV_series:LJ_Folger TV_series:Andre_Layton)
+ObjectPropertyAssertion(TV_series:isFriend TV_series:LJ_Folger TV_series:Mr._Wilford)
+ObjectPropertyAssertion(TV_series:status TV_series:LJ_Folger TV_series:Dead)
+DataPropertyAssertion(TV_series:portrayer TV_series:LJ_Folger "Annalise Basso"^^xsd:string)
+
+# Individual: TV_series:Leader (TV_series:Leader)
+
+ClassAssertion(TV_series:Occupation TV_series:Leader)
+
+# Individual: TV_series:Liana_Layton (TV_series:Liana_Layton)
+
+ClassAssertion(TV_series:Character TV_series:Liana_Layton)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Liana_Layton TV_series:A_New_Life)
+ObjectPropertyAssertion(TV_series:gender TV_series:Liana_Layton TV_series:Female)
+ObjectPropertyAssertion(TV_series:isChild TV_series:Liana_Layton TV_series:Andre_Layton)
+ObjectPropertyAssertion(TV_series:status TV_series:Liana_Layton TV_series:Alive)
+
+# Individual: TV_series:LowerLower_Class (TV_series:LowerLower_Class)
+
+ClassAssertion(TV_series:Social_Status TV_series:LowerLower_Class)
+
+# Individual: TV_series:Lower_Class (TV_series:Lower_Class)
+
+ClassAssertion(TV_series:Social_Status TV_series:Lower_Class)
+
+# Individual: TV_series:Male (TV_series:Male)
+
+ClassAssertion(TV_series:Gender TV_series:Male)
+
+# Individual: TV_series:Melanie_Cavill (TV_series:Melanie_Cavill)
+
+ClassAssertion(TV_series:Character TV_series:Melanie_Cavill)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Melanie_Cavill TV_series:First_the_Weather_Changed)
+ObjectPropertyAssertion(TV_series:gender TV_series:Melanie_Cavill TV_series:Female)
+ObjectPropertyAssertion(TV_series:hasOccupation TV_series:Melanie_Cavill TV_series:Engineer)
+ObjectPropertyAssertion(TV_series:hasSocialStatus TV_series:Melanie_Cavill TV_series:Middle_class)
+ObjectPropertyAssertion(TV_series:status TV_series:Melanie_Cavill TV_series:Alive)
+DataPropertyAssertion(TV_series:hasHeight TV_series:Melanie_Cavill "167"^^xsd:int)
+DataPropertyAssertion(TV_series:portrayer TV_series:Melanie_Cavill "Jennifer Connelly"^^xsd:string)
+
+# Individual: TV_series:Middle_class (TV_series:Middle_class)
+
+ClassAssertion(TV_series:Social_Status TV_series:Middle_class)
+
+# Individual: TV_series:Miles (TV_series:Miles)
+
+ClassAssertion(TV_series:Character TV_series:Miles)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Miles TV_series:First_the_Weather_Changed)
+ObjectPropertyAssertion(TV_series:gender TV_series:Miles TV_series:Male)
+ObjectPropertyAssertion(TV_series:hasOccupation TV_series:Miles TV_series:Student)
+ObjectPropertyAssertion(TV_series:hasSocialStatus TV_series:Miles TV_series:LowerLower_Class)
+ObjectPropertyAssertion(TV_series:status TV_series:Miles TV_series:Alive)
+DataPropertyAssertion(TV_series:portrayer TV_series:Miles "Jaylin Fletcher"^^xsd:string)
+
+# Individual: TV_series:Miss_Audrey (TV_series:Miss_Audrey)
+
+ClassAssertion(TV_series:Character TV_series:Miss_Audrey)
+
+# Individual: TV_series:Mr._Wilford (TV_series:Mr._Wilford)
+
+ClassAssertion(TV_series:Character TV_series:Mr._Wilford)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Mr._Wilford TV_series:The_Time_of_Two_Engines)
+ObjectPropertyAssertion(TV_series:gender TV_series:Mr._Wilford TV_series:Male)
+ObjectPropertyAssertion(TV_series:hasOccupation TV_series:Mr._Wilford TV_series:Head_Engineer)
+ObjectPropertyAssertion(TV_series:hasSocialStatus TV_series:Mr._Wilford TV_series:Upper_Class)
+ObjectPropertyAssertion(TV_series:status TV_series:Mr._Wilford TV_series:Alive)
+DataPropertyAssertion(TV_series:hasHeight TV_series:Mr._Wilford "155"^^xsd:int)
+DataPropertyAssertion(TV_series:portrayer TV_series:Mr._Wilford "Sean Bean"^^xsd:string)
+
+# Individual: TV_series:Night_Car (TV_series:Night_Car)
+
+ClassAssertion(TV_series:Location TV_series:Night_Car)
+DataPropertyAssertion(TV_series:Height TV_series:Night_Car "12"^^xsd:int)
+DataPropertyAssertion(TV_series:Lenght TV_series:Night_Car "65"^^xsd:int)
+DataPropertyAssertion(TV_series:Width TV_series:Night_Car "9"^^xsd:int)
+DataPropertyAssertion(TV_series:car_number TV_series:Night_Car "557"^^xsd:int)
+
+# Individual: TV_series:Pike (TV_series:Pike)
+
+ClassAssertion(TV_series:Character TV_series:Pike)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Pike TV_series:First_the_Weather_Changed)
+ObjectPropertyAssertion(TV_series:gender TV_series:Pike TV_series:Male)
+ObjectPropertyAssertion(TV_series:hasSocialStatus TV_series:Pike TV_series:LowerLower_Class)
+ObjectPropertyAssertion(TV_series:status TV_series:Pike TV_series:Dead)
+DataPropertyAssertion(TV_series:hasHeight TV_series:Pike "189"^^xsd:int)
+DataPropertyAssertion(TV_series:portrayer TV_series:Pike "Steven Ogg"^^xsd:string)
+
+# Individual: TV_series:Prepare_to_Brace (TV_series:Prepare_to_Brace)
+
+ClassAssertion(TV_series:Episode TV_series:Prepare_to_Brace)
+ObjectPropertyAssertion(TV_series:episodeOf TV_series:Prepare_to_Brace TV_series:Season_1)
+DataPropertyAssertion(TV_series:release_date TV_series:Prepare_to_Brace "45 min."^^xsd:string)
+
+# Individual: TV_series:Ruth (TV_series:Ruth)
+
+ClassAssertion(TV_series:Character TV_series:Ruth)
+ObjectPropertyAssertion(TV_series:firstAppearance TV_series:Ruth TV_series:First_the_Weather_Changed)
+ObjectPropertyAssertion(TV_series:gender TV_series:Ruth TV_series:Female)
+ObjectPropertyAssertion(TV_series:hasOccupation TV_series:Ruth TV_series:Head_of_Hospitality)
+ObjectPropertyAssertion(TV_series:hasSocialStatus TV_series:Ruth TV_series:Middle_class)
+ObjectPropertyAssertion(TV_series:status TV_series:Ruth TV_series:Alive)
+DataPropertyAssertion(TV_series:portrayer TV_series:Ruth "Alison Wright"^^xsd:string)
+
+# Individual: TV_series:Season_1 (TV_series:Season_1)
+
+AnnotationAssertion(rdfs:sameAs TV_series:Season_1 "https://dbpedia.org/page/Gender")
+ClassAssertion(TV_series:Season TV_series:Season_1)
+DataPropertyAssertion(TV_series:no_episodes TV_series:Season_1 "10"^^xsd:int)
+DataPropertyAssertion(TV_series:release_date TV_series:Season_1 "May 17, 2020 - July 12, 2020"^^xsd:string)
+
+# Individual: TV_series:Season_2 (TV_series:Season_2)
+
+ClassAssertion(TV_series:Season TV_series:Season_2)
+DataPropertyAssertion(TV_series:no_episodes TV_series:Season_2 "10"^^xsd:int)
+DataPropertyAssertion(TV_series:release_date TV_series:Season_2 "January 25, 2021 - March 29, 2021"^^xsd:string)
+
+# Individual: TV_series:Season_3 (TV_series:Season_3)
+
+ClassAssertion(TV_series:Season TV_series:Season_3)
+DataPropertyAssertion(TV_series:no_episodes TV_series:Season_3 "10"^^xsd:int)
+DataPropertyAssertion(TV_series:release_date TV_series:Season_3 "January 24, 2022 - March 28, 2022"^^xsd:string)
+
+# Individual: TV_series:Student (TV_series:Student)
+
+ClassAssertion(TV_series:Occupation TV_series:Student)
+
+# Individual: TV_series:The_Aquarium (TV_series:The_Aquarium)
+
+ClassAssertion(TV_series:Location TV_series:The_Aquarium)
+DataPropertyAssertion(TV_series:Height TV_series:The_Aquarium "12"^^xsd:int)
+DataPropertyAssertion(TV_series:Lenght TV_series:The_Aquarium "65"^^xsd:int)
+DataPropertyAssertion(TV_series:Width TV_series:The_Aquarium "9"^^xsd:int)
+DataPropertyAssertion(TV_series:car_number TV_series:The_Aquarium "11"^^xsd:int)
+
+# Individual: TV_series:The_Tail (TV_series:The_Tail)
+
+ClassAssertion(TV_series:Location TV_series:The_Tail)
+DataPropertyAssertion(TV_series:Height TV_series:The_Tail "12"^^xsd:int)
+DataPropertyAssertion(TV_series:Lenght TV_series:The_Tail "65"^^xsd:int)
+DataPropertyAssertion(TV_series:Width TV_series:The_Tail "9"^^xsd:int)
+DataPropertyAssertion(TV_series:car_number TV_series:The_Tail "999"^^xsd:int)
+
+# Individual: TV_series:The_Time_of_Two_Engines (TV_series:The_Time_of_Two_Engines)
+
+ClassAssertion(TV_series:Episode TV_series:The_Time_of_Two_Engines)
+ObjectPropertyAssertion(TV_series:episodeOf TV_series:The_Time_of_Two_Engines TV_series:Season_2)
+DataPropertyAssertion(TV_series:duration TV_series:The_Time_of_Two_Engines "46 min."^^xsd:string)
+
+# Individual: TV_series:Train_Detective (TV_series:Train_Detective)
+
+ClassAssertion(TV_series:Occupation TV_series:Train_Detective)
+
+# Individual: TV_series:Upper_Class (TV_series:Upper_Class)
+
+ClassAssertion(TV_series:Social_Status TV_series:Upper_Class)
+
+# Individual: TV_series:Veterinarian (TV_series:Veterinarian)
+
+ClassAssertion(TV_series:Occupation TV_series:Veterinarian)
+
+# Individual: TV_series:Whitout_Their_Maker (TV_series:Whitout_Their_Maker)
+
+ClassAssertion(TV_series:Episode TV_series:Whitout_Their_Maker)
+ObjectPropertyAssertion(TV_series:episodeOf TV_series:Whitout_Their_Maker TV_series:Season_1)
+DataPropertyAssertion(TV_series:release_date TV_series:Whitout_Their_Maker "46 min."^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#994_Cars_Long> (<http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#994_Cars_Long>)
+
+ClassAssertion(TV_series:Episode <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#994_Cars_Long>)
+ObjectPropertyAssertion(TV_series:episodeOf <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#994_Cars_Long> TV_series:Season_1)
+DataPropertyAssertion(TV_series:duration <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#994_Cars_Long> "44 min"^^xsd:string)
+
+
+)
