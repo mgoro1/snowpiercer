@@ -685,6 +685,3 @@ DataPropertyAssertion(TV_series:release_date TV_series:Whitout_Their_Maker "46 m
 ClassAssertion(TV_series:Episode <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#994_Cars_Long>)
 ObjectPropertyAssertion(TV_series:episodeOf <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#994_Cars_Long> TV_series:Season_1)
 DataPropertyAssertion(TV_series:duration <http://www.semanticweb.org/desktop06/ontologies/2022/3/snowpiercer(TV_series)#994_Cars_Long> "44 min"^^xsd:string)
-
-
-)
